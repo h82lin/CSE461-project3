@@ -184,9 +184,9 @@ def bufferbloat():
     # times.  You don't need to plot them.  Just note it in your
     # README and explain.
     mean = round(helper.avg(times), 5)
-    print("Mean of queue size " + str(args.maxq) + ": " + str(mean))
+    print("Average of queue size " + str(args.maxq) + "(3 fetches): " + str(mean))
     stdev = round(helper.stdev(times), 5)
-    print("Stdev of queue size " + str(args.maxq) + ": " + str(stdev))
+    print("Stdev of queue size " + str(args.maxq) + "(3 fetches): " + str(stdev))
 
     # Hint: The command below invokes a CLI which you can use to
     # debug.  It allows you to run arbitrary commands inside your
