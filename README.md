@@ -11,6 +11,7 @@ The discrepancy in webpage fetch times can also be attributed to the behavior of
 
     1500 * 8 * 1000 / 100 / 10^6 = 0.12 seconds
 &nbsp;
+&nbsp;
 4. When the queue size is set to 20, the round-trip time (RTT) remains small, ranging from 100ms to 250ms. This narrow range can be attributed to the effectiveness of TCP congestion control mechanisms. When the queue size is small, regular packet drops occur, leading to frequent multiplicative decreases and maintaining a relatively stable sending rate. This is reflected in the compressed nature of the RTT graph for the queue size of 20.
 On the other hand, when the queue size is increased to 100, the RTT experiences a significant rise and a broader range of 100ms to 1600ms. With fewer packet drops occurring due to the larger buffer, there are fewer multiplicative decreases in the sending rate. As a result, the RTT values become more varied and extended.
 Overall, a queue size of 20 maintains a small and stable RTT range due to regular packet drops and multiplicative decreases. In contrast, a queue size of 100 leads to a higher and more diverse RTT range as fewer packet drops occur, resulting in fewer multiplicative decreases.
