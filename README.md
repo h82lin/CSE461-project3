@@ -1,3 +1,8 @@
+# Instructions
+
+-   Command to run TCP Reno: `sudo ./run.sh`
+-   Command to run TCP BBR: `sudo ./run_bbr.sh`
+
 # **Part2**
 
  1. When q = 20, the average fetch time for 3 fetches is 0.84106s, and the standard deviation is 0.78981s
